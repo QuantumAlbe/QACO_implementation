@@ -1,7 +1,5 @@
 # QACO_implementation
 
-# QACO_implementation
-
 Implementation (in Jupyter notebooks) of a **hybrid quantum–classical Ant Colony Optimization** approach for solving **NP-hard combinatorial optimization**, with the **Quadratic Assignment Problem (QAP)** as a reference benchmark, following the “implementable” QACO framework by Garcia de Andoin & Echanobe. :contentReference[oaicite:2]{index=2}
 
 > **Goal of this repository**
@@ -15,19 +13,19 @@ Implementation (in Jupyter notebooks) of a **hybrid quantum–classical Ant Colo
 ## Background (short)
 
 ### Quadratic Assignment Problem (QAP)
-QAP is a classic **NP-hard** assignment problem where the objective involves **pairwise (quadratic) interaction costs** between assigned facilities/locations. It quickly becomes intractable to solve exactly as the size grows, making metaheuristics (like ACO) attractive. :contentReference[oaicite:3]{index=3}
+QAP is a classic **NP-hard** assignment problem where the objective involves **pairwise (quadratic) interaction costs** between assigned facilities/locations. It quickly becomes intractable to solve exactly as the size grows, making metaheuristics (like ACO) attractive.
 
 ### Classical ACO in one paragraph
-Ant Colony Optimization (ACO) is a bio-inspired metaheuristic: candidate solutions are sampled probabilistically using “pheromone” information that is iteratively reinforced according to solution quality. ACO is approximate by design: it trades guaranteed optimality for practicality on hard problems. :contentReference[oaicite:4]{index=4}
+Ant Colony Optimization (ACO) is a bio-inspired metaheuristic: candidate solutions are sampled probabilistically using “pheromone” information that is iteratively reinforced according to solution quality. ACO is approximate by design: it trades guaranteed optimality for practicality on hard problems.
 
 ### Why “hybrid quantum” here?
-This project does **not** claim that quantum computers “solve NP-hard problems efficiently.” Instead, the quantum component is used as an **exploration mechanism** (sampling new candidate solutions), while evaluation and update steps remain classical. The target is a practical NISQ-style hybrid workflow. :contentReference[oaicite:5]{index=5}
+This project does **not** claim that quantum computers “solve NP-hard problems efficiently.” Instead, the quantum component is used as an **exploration mechanism** (sampling new candidate solutions), while evaluation and update steps remain classical. The target is a practical NISQ-style hybrid workflow.
 
 ---
 
 ## Repository structure
 
-The repository is organized into three main folders: :contentReference[oaicite:6]{index=6}
+The repository is organized into three main folders:
 
 - `ACO_algorithm/`  
   Classical baseline ACO implementation and experiments (QAP).
